@@ -114,41 +114,22 @@ body{
 } */
 
 
-.profilePic{
-    position: absolute;
-    left: 40vw;
-    top: 43vh;
-    width: 200px;
-    border-radius: 50%;
+.profilePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
 }
 
-
-.profilePic img{
+.profilePic img {
+    position: absolute;
     width: 200px;
+    max-width: 80vw;
     border-radius: 50%;
     box-shadow: 8px 8px 30px rgba(255, 255, 255, 1);
 }
-
-
-@media screen and (max-width:576px) {
-    .hearderLinks ul li a{
-        display: none;
-    }
-
-    .menuicon{
-        display: block;
-    }
-
-    .profilePic{
-        position: absolute;
-        left: 34vw;
-        top: 55vh;
-        width: 200px;
-        border-radius: 50%;
-    }
-}
-
-
 
 
 
@@ -156,14 +137,6 @@ body{
 .aboutMe{
     margin-bottom: 20vh;
 }
-
-
-
-
-
-
-
-
 
 
 
