@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Example</title>
+    <style>
+        .active {
+            background-color: yellow;
+        }
+        .inactive {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="toggleDiv" class="inactive">Click me to toggle class</div>
+    <button id="toggleButton">Toggle Active Class</button>
+
+    <script>
+        const div = document.getElementById('toggleDiv');
+        const button = document.getElementById('toggleButton');
+
+        button.addEventListener('click', () => {
+            div.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

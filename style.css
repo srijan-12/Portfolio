@@ -1,0 +1,649 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --primary-color: #235AA4;       /* blue */
+   --secondary-color: #DFA469;
+   --advanced-color:#ACD633;
+   --intermediate-color:#FFD833;
+   --beginer-color:#FF8C5A;
+}
+
+
+.imgHere{
+    background-image: url("Assests/macbook_mouse.jpg");
+    background-size: cover;
+    margin-bottom: 15vh;
+}
+
+.menuicon{
+    display: none;
+    margin-left: 5vw;
+}
+
+
+
+.hearderLinks{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.hearderLinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menuicon ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2vw;
+}
+
+
+.hearderLinks ul li,
+.menuicon ul li{
+    list-style-type: none;
+}
+
+ .hearderLinks ul li a,
+.menuicon ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.hearderLinks ul li:hover,
+.menuicon ul li:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: all 0.3s linear;
+}  
+
+.name{
+    margin-top: 80px;
+}
+
+.name>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+}
+
+.name h1{
+    font-weight: 600;
+}
+
+.socialHandles{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.socialHandles div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 10px;
+    margin-bottom: 65px;
+}
+
+.socialIconDiv{
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.socialIconDiv i{
+    transition: all 0.5s ease 0s;
+}
+
+.socialIconDiv i:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+/* .socialIconDiv:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+
+.profilePic{
+    position: absolute;
+    left: 40vw;
+    top: 43vh;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.profilePic img{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 30px rgba(255, 255, 255, 1);
+}
+
+
+@media screen and (max-width:576px) {
+    .hearderLinks ul li a{
+        display: none;
+    }
+
+    .menuicon{
+        display: block;
+    }
+
+    .profilePic{
+        position: absolute;
+        left: 34vw;
+        top: 55vh;
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+.aboutMe{
+    margin-bottom: 20vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 30vw;
+    margin-bottom: 2vh;
+}
+.head i, h1{
+    color: var(--primary-color);
+}
+
+.skillset{
+    background-color: lightgray;
+    padding: 50px;
+}
+
+.frontend{
+    margin-top: 3vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.fhead{
+    margin: 5vh 0;
+}
+
+
+.fSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.dbSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills{
+    height: 50px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
+    padding: 0;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    color: black;
+    outline: none;
+    transition: all 1s ease 0s;
+}
+
+.skills:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    margin: 0 20px;
+}
+
+.skills:hover .hover-element{
+    display: block;
+
+}
+
+.skills:hover .hover-element{
+    display: block;
+    
+}
+
+.skills:hover .hover-none-element{
+    display: none;
+}
+
+.colors{
+    height: 100%;
+    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.colors p{
+    color: black;
+}
+
+
+.color1{
+    width: 95%;
+    background-color: var(--advanced-color);
+}
+
+
+
+.color2{
+    width: 90%;
+    background-color: var(--advanced-color);
+}
+
+
+
+.color3{
+    width: 90%;
+    background-color: var(--advanced-color);
+}
+
+
+
+.color4{
+    width: 90%;
+    background-color: var(--advanced-color);
+}
+
+
+.color5{
+    width: 85%;
+    background-color: var(--advanced-color);
+}
+
+.color6{
+    width: 90%;
+    background-color: var(--advanced-color);
+}
+
+.color7{
+    width: 90%;
+    background-color: var(--advanced-color);
+}
+
+.color8{
+    width: 70%;
+    background-color: var(--intermediate-color);
+}
+
+
+
+.color9{
+    width: 50%;
+    background-color: var(--beginer-color);
+    font-size: 0.8rem;
+}
+
+
+.color10{
+    width: 50%;
+    background-color: var(--beginer-color);
+    font-size: 0.8rem;
+}
+
+.color11{
+    width: 50%;
+    background-color: var(--beginer-color);
+    font-size: 0.8rem;
+}
+
+.hover-element{
+    display: none;
+}
+
+
+
+
+.work-exp, .education{
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
+.work-container, .education-container{
+    position: relative;
+    padding: 20px 60px;
+}
+
+.work,.edu{
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 600px;
+    max-width: 500px; 
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: end;
+    padding: 10px;
+    background-color: white;
+}
+
+.work:nth-child(2n),
+.edu:nth-child(2n){
+    margin-left: 58%;
+}
+
+.work:nth-child(2n+1),
+.edu:nth-child(2n+1){
+    margin-right: 58%;
+}
+
+.divider{
+    position: absolute;
+    height: 66%;
+    width: 0%;
+    border: 2px dashed rgb(130, 215, 244);
+    left: 50%;
+    top: 10%;
+}
+
+#wt.divider.workTracker{
+    /* position: absolute; */
+    height: 38%;
+    /* width: 0%;
+    border: 2px dashed rgb(130, 215, 244);
+    left: 50%;
+    top: 10%; */
+}
+
+
+
+.work::after,
+.edu::after{
+    content: "";
+    height: 1.2vw;
+    width: 1.2vw;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.work:nth-child(1)::after,
+.edu:nth-child(1)::after{
+    background-color: var(--beginer-color);
+    left: 49.5%;
+    top: 10%;
+}
+
+.work:nth-child(2)::after,
+.edu:nth-child(2)::after{
+    background-color: var(--beginer-color);
+    right: 49.2%;
+    top: 45%;
+}
+
+.work:nth-child(3)::after,
+.edu:nth-child(3)::after{
+    background-color: var(--beginer-color);
+    left: 49.5%;
+    top: 75%;
+}
+
+.workTracker i{
+    transform: rotate(180deg);
+    position: sticky;
+    top: 40%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.eduTracker i{
+    position: sticky;
+    top: 40%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.divider>i::before{
+    margin-right: -16px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .divider{
+        position: absolute;
+        height: 66%;
+        width: 0%;
+        border: 2px dashed rgb(130, 215, 244);
+        left: 8vw;
+        top: 10%;
+    }
+
+    .work:nth-child(n),
+    .edu:nth-child(n){
+        margin: 0;
+        margin: 20px 0px;
+        margin-left: 25vw;
+    }
+
+    .work:nth-child(n)::after,
+    .edu:nth-child(n)::after{
+        margin: 0;
+        left: 7.3vw;
+        height: 2vw;
+        width: 2vw;
+        border-radius: 50%;
+    }
+}
+
+
+.s1{
+    color: var(--beginer-color);
+    font-size: 1.3rem;
+}
+
+.s2{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.s3{
+    color: grey;
+}
+
+.work p
+,.edu p{
+    color: darkgrey;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+ .projectlink{
+    gap: 10%;
+} 
+
+
+.plink{
+  min-height: 25%;
+  min-width: 25%; 
+  position: relative;
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  border-radius: 10px; 
+}
+
+.plink img{
+    height: 100%;
+    width: 100%;
+}
+
+.plink:hover{
+    transform: scale(1.1);
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.plink::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.plink:hover::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.plink1:hover::before{
+    content: "Full-stack chat application with seamless front-end and back-end integration. Features include user authentication, one-to-one and group chats, real-time notifications, and typing indicators — built using industry best practices";
+    border-radius: 10px;
+}
+
+.contact{
+    margin-top: 20vh;
+    background: linear-gradient(to bottom left,#473A70,#2A569B);
+    padding: 0 10vw;
+}
+
+.contact .head{
+    margin-top: 8vh;
+}
+
+
+/* .contactform form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+.contactform input,.contactform textarea{
+    background-color: transparent;
+     border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white; 
+    
+    margin: 0 auto;
+    outline: none;
+    margin: 3vh 0px;
+    padding: 20px;
+}
+.contactform label{
+    color: gray;
+}
+.contactform input:focus,
+.contactform textarea:focus{
+    background-color: transparent;   
+}
+
+.contactform button{
+    width: 30%;
+    min-width: 125px;
+    height: 50px;
+    margin: 5vh 0;
+    margin-left: 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    color: white;
+    
+}
+
+.contactform button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.cdesc2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.contactdesc{
+    margin-left: 12vw;
+    margin-top: 5vh;
+}
+
+.socialHandlesFooter{
+    margin-top: 10%;
+}
+
+div.col.footer{
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 991px){
+    .contactdesc{
+        margin-left: 0vw;
+        margin-top: 5vh;
+    }
+}
