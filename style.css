@@ -620,3 +620,13 @@ div.col.footer{
         margin-top: 5vh;
     }
 }
+
+@media screen and (max-width:576px) {
+    .hearderLinks ul li a{
+        display: none;
+    }
+
+    .menuicon{
+        display: block;
+    }
+}
